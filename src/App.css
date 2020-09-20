@@ -1,38 +1,169 @@
-.App {
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.primary-nav{
+  padding:10px;
+  width: 100%;
+  background-color: #76ACA9;
+  text-align: center;
+
+}
+.primary-nav a{
+  color: white;
+  font-size: 36px;
+}
+.brand-icons{
+  flex-direction: row !important;
+  justify-content: space-around;
+}
+#banner{
+  background-image: url("./assets/BANNER.png");
+  height: 600px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+}
+
+.green-btn{
+  width: 100%;
+  height: 62px;
+  background-color: #76ACA9 !important;
+  color: white !important;
+  box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
+
+}
+.container{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#content{
+  color:white;
+  background-image: linear-gradient(to bottom,  #7E649F,#130D36);
+  padding: 20px 10px;
+}
+nav{
+  background-color: #3B5B5A !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.profile-icons{
+  margin-top:20px;
+}
+.split-border{
+  border-top: 1px solid;
+    padding: 11px 0;
+    margin-top: 25px;
+}
+
+
+
+#contact input , #contact button{
+  background-color: #C4C4C4;
+  border: 1px solid #989898;
+}
+#contact button{
+  font-weight: bold;
+  color: black;
+  width: 100%;
+  margin-top: 20px;
+}
+#contact{
+  background-color: #000000;
+  color : #FFFFFF;
+  text-align: left !important;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#form{
+  text-align: left !important;
+  margin-top: 30px;
+}
+
+#form h5{
+  text-align: center !important;
+}
+
+footer{
+  background-color: #000000;
+  color : #FFFFFF;
+  text-align: center;
+  padding-top: 50px;
+}
+
+small{
+  color:red;
+}
+
+#map h5{
+ padding-bottom: 10px;
+}
+
+.map-container{
+  height: 100%;
+}
+@media screen and (min-width: 768px)  {
+  #form{
+    margin-top: 0px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 992px)  {
+.navbar-nav{
+    margin: 0 auto;
   }
-  to {
-    transform: rotate(360deg);
+  .navbar-nav li{
+    padding: 0 10px;
   }
+  .flex{
+    display: flex;
+  }
+  .navbar-brand{
+    margin-left: auto;
+    font-size: 40px;
+  }
+  .green-btn{
+    width: 295px;
+  }
+  .profile-icons{
+    display: flex !important;
+  }
+  .profile-icons > div{
+    width: 95%;
+  }
+ }
+
+ @media screen and (min-width:1024px)  {
+  .side{
+    display: flex;
+      margin-top: 24px;
+  }
+  .split-border {
+    border-top: 0;
+    padding: 0px 34px;
+    margin-top: 0px;
+    text-align: left;
+  }
+
+  .side > h2{
+    text-align: right;
+    border-right: 1px solid;
+    padding-right: 35px;
+  }
+  .h2 {
+    padding: 16px 27px 26px 0px !important;
+  }
+  .flex-contact{
+    display: flex;
+  }
+
 }
